@@ -403,3 +403,74 @@ figure {
   background-color: var(--color-primary-light);
   border-color: var(--color-primary-light);
 }
+
+/* ==== HELP ==== */
+
+.help {
+  width: 100%;
+  background-color: var(--color-light-xl);
+  padding: 80px 40px 100px 40px;
+}
+
+.help__container {
+  max-width: 1280px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.help__heading {
+  margin: 0;
+  max-width: 400px;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 130%;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: var(--color-dark-l);
+  margin-bottom: 60px;
+}
+
+.help__list {
+  max-width: 1026px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 55px;
+}
+
+.help__row {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 120px;
+}
+
+.help__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.help__icon {
+  width: 60px;
+  height: 60px;
+  display: block;
+}
+
+.help__text {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 115%;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: var(--color-dark-l);
+  white-space: nowrap;
+}
