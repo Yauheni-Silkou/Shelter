@@ -38,8 +38,7 @@ html {
 
 .header__container {
   margin: 0 auto;
-  padding: 0 40px;
-  padding-top: 30px;
+  padding: 30px 40px;
   max-width: 1280px;
   display: flex;
   justify-content: space-between;
@@ -51,6 +50,7 @@ html {
   flex-direction: column;
   align-items: center;
   gap: 10px;
+  text-decoration: none;
 }
 
 .logo__title {
@@ -113,6 +113,7 @@ html {
   display: inline-flex;
   flex-direction: column;
   align-items: center;
+  transition: color 0.5s ease;
 }
 
 .nav__link--main {
@@ -120,11 +121,20 @@ html {
 }
 
 .nav__link--active {
-  color: var(--color-dark-3xl);
+  color: var(--color-dark-l);
   border-bottom: 3px solid var(--color-primary);
+  cursor: default;
 }
 
 .nav__link--main.nav__link--active {
+  color: var(--color-light-s);
+}
+
+.nav__link:hover {
+  color: var(--color-dark-3xl);
+}
+
+.nav__link--main:hover {
   color: var(--color-light-s);
 }
 
@@ -210,7 +220,7 @@ html {
   letter-spacing: 0.06em;
   color: var(--color-dark-3xl);
 
-  transition: background-color 0.3s ease;
+  transition: background-color 0.5s ease;
 }
 
 .button--primary:hover {
@@ -347,9 +357,6 @@ html {
 .slider__arrow-icon {
   width: 14px;
   height: 6px;
-  background-image: url("../assets/icons/arrow.svg");
-  background-repeat: no-repeat;
-  background-position: center;
 }
 
 .slider__arrow--left .slider__arrow-icon {
@@ -561,7 +568,7 @@ html {
   display: inline-flex;
   align-items: center;
   gap: 15px;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.5s ease;
 }
 
 .credit-card:hover {
@@ -571,9 +578,6 @@ html {
 .credit-card__icon {
   width: 30px;
   height: 23px;
-  background-image: url("../assets/icons/credit-card.svg");
-  background-repeat: no-repeat;
-  background-position: center;
   display: block;
 }
 
