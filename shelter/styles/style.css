@@ -474,3 +474,108 @@ figure {
   color: var(--color-dark-l);
   white-space: nowrap;
 }
+
+/* ==== DONATION (a.k.a. IN ADDITION) ==== */
+
+.donation {
+  width: 100%;
+  background-color: var(--color-light-l);
+  padding: 80px 40px 100px 40px;
+}
+
+.donation__container {
+  max-width: 1280px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 40px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.donation__content {
+  max-width: 380px;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.donation__heading {
+  margin: 0;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 130%;
+  letter-spacing: 0.06em;
+  color: var(--color-dark-l);
+  margin-bottom: 20px;
+}
+
+.donation__subheading {
+  margin: 0;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 110%;
+  letter-spacing: 0.06em;
+  color: var(--color-dark-l);
+  margin-bottom: 20px;
+}
+
+.credit-card {
+  width: 350px;
+  height: 43px;
+  background-color: var(--color-primary);
+  border-radius: 9px;
+  text-decoration: none;
+  padding: 10px 15px;
+
+  display: inline-flex;
+  align-items: center;
+  gap: 15px;
+  transition: background-color 0.3s ease;
+}
+
+.credit-card:hover {
+  background-color: var(--color-primary-light);
+}
+
+.credit-card__icon {
+  width: 30px;
+  height: 23px;
+  background-image: url("../assets/icons/credit-card.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  display: block;
+}
+
+.credit-card__number {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 115%;
+  letter-spacing: 0.06em;
+  color: var(--color-dark-l);
+}
+
+.donation__legal {
+  margin: 0;
+  margin-top: 20px;
+  font-family: var(--second-family);
+  font-style: italic;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 150%;
+  color: var(--color-dark-m);
+}
+
+.donation__image {
+  max-width: 505px;
+  width: 100%;
+  height: auto;
+  display: block;
+}
