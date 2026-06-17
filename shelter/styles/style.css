@@ -27,6 +27,12 @@ body {
   min-width: 1280px;
 }
 
+.section-container {
+  max-width: 1280px;
+  padding: 80px 40px 100px 40px;
+  margin: 0 auto;
+}
+
 /* ==== HEADER ==== */
 
 .header {
@@ -43,6 +49,7 @@ body {
 }
 
 .header__container {
+  min-width: 1280px;
   max-width: 1280px;
   padding: 30px 40px;
 
@@ -251,11 +258,6 @@ body {
 }
 
 .about__container {
-  max-width: 1280px;
-  padding: 80px 40px 100px 40px;
-
-  margin: 0 auto;
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -309,11 +311,7 @@ body {
 }
 
 .pets__container {
-  max-width: 1280px;
-  padding: 80px 40px 100px 40px;
-
   width: 100%;
-  margin: 0 auto;
 
   display: flex;
   flex-direction: column;
@@ -446,11 +444,7 @@ body {
 }
 
 .help__container {
-  max-width: 1280px;
-  padding: 80px 40px 100px 40px;
-
   width: 100%;
-  margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -517,12 +511,7 @@ body {
 }
 
 .donation__container {
-  max-width: 1280px;
-  padding: 80px 40px 100px 40px;
-
   width: 100%;
-  margin: 0 auto;
-
   display: flex;
   justify-content: center;
   align-items: center;
