@@ -366,10 +366,6 @@ body {
   height: 6px;
 }
 
-.slider__arrow--left .slider__arrow-icon {
-  transform: rotate(180deg);
-}
-
 .slider__track {
   display: flex;
   align-items: center;
