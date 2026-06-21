@@ -593,7 +593,6 @@ body {
 }
 
 .our-pets__container {
-  max-width: 1280px;
   padding: 200px 40px 100px 40px;
 
   width: 100%;
@@ -619,10 +618,10 @@ body {
 
 .cards-container {
   width: 100%;
-  max-width: 1200px;
   margin-bottom: 60px;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(4, max-content);
+  justify-content: center;
   gap: 30px 40px;
   justify-items: center;
 }
@@ -860,6 +859,27 @@ body {
   .donation__container {
     flex-direction: column-reverse;
     gap: 60px;
+  }
+
+  .our-pets__container {
+    padding-bottom: 75px;
+  }
+
+  .our-pets__heading {
+    margin-bottom: 30px;
+  }
+
+  .cards-container {
+    margin-bottom: 40px;
+  }
+
+  .cards-container {
+    grid-template-columns: repeat(2, max-content);
+    justify-content: center;
+  }
+
+  .cards-container .pet-card:nth-last-child(-n + 2) {
+    display: none;
   }
 
   .footer__container {
