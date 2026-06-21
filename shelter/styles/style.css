@@ -1122,6 +1122,38 @@ body {
     letter-spacing: 0.06em;
   }
 
+  .our-pets__container {
+    padding: 161px 10px 45px 10px;
+    gap: 0;
+  }
+
+  .our-pets__heading {
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+    text-align: center;
+    margin-bottom: 41px;
+    padding: 0;
+  }
+
+  .cards-container {
+    grid-template-columns: repeat(1, max-content);
+    justify-content: center;
+  }
+
+  .cards-container .pet-card {
+    display: none;
+  }
+
+  .cards-container .pet-card:nth-child(-n + 3) {
+    display: flex;
+  }
+
+  .pagination {
+    gap: 10px;
+  }
+
   .footer {
     padding: 30px 10px;
     padding-bottom: 0;
