@@ -350,6 +350,7 @@ body {
 .slider__arrow {
   width: 52px;
   height: 52px;
+  min-width: 52px;
   background-color: transparent;
   border: 2px solid var(--color-primary);
   border-radius: 100px;
