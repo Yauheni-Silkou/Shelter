@@ -809,10 +809,12 @@ body {
     flex-direction: column;
     align-items: center;
     padding-top: 0;
+    padding-right: 30px; /* instead of 40px */
   }
 
   .start-screen__content {
     padding-top: 150px;
+    margin-right: 10px; /* it's better to use wrapper for image (start-screen__image) with padding instead */
   }
 
   .start-screen__image {
@@ -960,6 +962,10 @@ body {
   .start-screen__container {
     padding: 0 10px;
     gap: 5px;
+  }
+
+  .start-screen__content {
+    margin-right: 0; /* remove margin of 768px screen */
   }
 
   .start-screen__heading {
