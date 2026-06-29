@@ -1,7 +1,9 @@
 import { initBurger } from "./burger.js";
+import { initPopupEngine } from "./popup.js";
 
 document.addEventListener("DOMContentLoaded", async () => {
   initBurger();
+  initPopupEngine();
 
   const carouselTrack = document.getElementById("slider-track");
   if (carouselTrack) {
