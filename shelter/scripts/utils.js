@@ -30,3 +30,13 @@ export function getNextCarouselGroup(allPets, currentGroup, count) {
   const shuffledAvailable = shuffleArray(availablePets);
   return shuffledAvailable.slice(0, count);
 }
+
+export function generatePaginationMatrix(allPets) {
+  if (!allPets || allPets.length === 0) return [];
+  let dynamicMatrix = [];
+  for (let i = 0; i < 6; i++) {
+    const shuffledBlock = shuffleArray(allPets);
+    dynamicMatrix = dynamicMatrix.concat(shuffledBlock);
+  }
+  return dynamicMatrix;
+}

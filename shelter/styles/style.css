@@ -976,15 +976,8 @@ body.no-scroll {
 
   .cards-container {
     margin-bottom: 40px;
-  }
-
-  .cards-container {
     grid-template-columns: repeat(2, max-content);
     justify-content: center;
-  }
-
-  .cards-container .pet-card:nth-last-child(-n + 2) {
-    display: none;
   }
 
   .footer__container {
@@ -1284,14 +1277,6 @@ body.no-scroll {
   .cards-container {
     grid-template-columns: repeat(1, max-content);
     justify-content: center;
-  }
-
-  .cards-container .pet-card {
-    display: none;
-  }
-
-  .cards-container .pet-card:nth-child(-n + 3) {
-    display: flex;
   }
 
   .pagination {
