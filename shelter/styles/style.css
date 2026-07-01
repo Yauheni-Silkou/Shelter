@@ -183,24 +183,12 @@ body.no-scroll {
 
 .burger--main {
   color: var(--color-primary);
+  transition: rotate 0.5s ease-in-out;
+  transform-origin: center;
 }
 
-.burger .line {
-  transition:
-    transform 0.5s ease-in-out,
-    opacity 0.5s ease-in-out;
-  transform-origin: right;
-}
-.burger.open .line--top {
-  transform: translateX(-3px) translateY(3px) rotate(45deg);
-}
-
-.burger.open .line--middle {
-  opacity: 0;
-}
-
-.burger.open .line--bottom {
-  transform: translateX(-3px) translateY(-3px) rotate(-45deg);
+.burger.open {
+  rotate: 90deg;
 }
 
 .menu-overlay {
