@@ -1021,6 +1021,8 @@ body.no-scroll {
   transform: rotate(90deg);
 }
 
+/* ==== WINDOW 768 ==== */
+
 @media (max-width: 1279px) {
   .button--primary {
     align-self: center;
@@ -1178,6 +1180,8 @@ body.no-scroll {
     width: 260px;
   }
 }
+
+/* ==== WINDOW 320 ==== */
 
 @media (max-width: 767px) {
   .start-screen__heading,
