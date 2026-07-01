@@ -183,24 +183,12 @@ body.no-scroll {
 
 .burger--main {
   color: var(--color-primary);
+  transition: rotate 0.5s ease-in-out;
+  transform-origin: center;
 }
 
-.burger .line {
-  transition:
-    transform 0.5s ease-in-out,
-    opacity 0.5s ease-in-out;
-  transform-origin: right;
-}
-.burger.open .line--top {
-  transform: translateX(-3px) translateY(3px) rotate(45deg);
-}
-
-.burger.open .line--middle {
-  opacity: 0;
-}
-
-.burger.open .line--bottom {
-  transform: translateX(-3px) translateY(-3px) rotate(-45deg);
+.burger.open {
+  rotate: 90deg;
 }
 
 .menu-overlay {
@@ -1033,6 +1021,8 @@ body.no-scroll {
   transform: rotate(90deg);
 }
 
+/* ==== WINDOW 768 ==== */
+
 @media (max-width: 1279px) {
   .button--primary {
     align-self: center;
@@ -1190,6 +1180,8 @@ body.no-scroll {
     width: 260px;
   }
 }
+
+/* ==== WINDOW 320 ==== */
 
 @media (max-width: 767px) {
   .start-screen__heading,
